@@ -364,7 +364,7 @@ logger(); */
 
 
 //26 лессон, ещё про функции
-const usdCurr = 28;
+/* const usdCurr = 28;
 const eurCurr = 32;
 const discount = 0.9;
 
@@ -387,6 +387,59 @@ function test() {
         if (i === 3) return;
     }
     console.log('Done');
-}
+} */
 
-test();
+
+
+// 1 ex
+/* function sayHello(name) {
+    return `Привет, ${name}!`;
+}
+sayHello('Nik');
+ */
+
+
+// 2 ex
+/* function returnNeighboringNumbers(num) {
+    return [num -1, num, num +1];
+}
+returnNeighboringNumbers(5); */
+
+//3 ex
+function getMathResult(num, times) {
+    if (times !== 'number' && times <= 0) {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= times; i++) {
+        if (i === times) {
+            str += `${num * i}`;
+        } else {
+            str += `${num * i}---`;
+            }
+        }
+    return(str);
+}
+getMathResult(3, 5);
+
+
+function getMathResult(num, times) {
+    if (typeof(times) !== 'number' || times <= 0) {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= times; i++) {
+        if (i === times) {
+            str += `${num * i}`;
+        } else {
+            str += `${num * i}---`;
+        }
+    }
+
+    return str;
+}
+getMathResult(10, 5);
