@@ -79,3 +79,54 @@ switch (hours) {
 }
 
 return `Это ${hours} ${hoursStr} и ${minutes} минут`; */
+
+
+
+// ex8-2
+
+function findMaxNumber(a, b, c, d) {
+    if (typeof(a, b, c, d) !== 'number'|| a === '' || b === '' || c === '' || d === '') {
+        return 0;
+    }
+    if (a > b && a > c && a > d) {
+        return a;
+    } else if (b > a && b > c && b > d) {
+        return b;
+    } else if (c > a && c > b && c > d) {
+        return c;
+    } else if (d > a && d > b && d > c) {
+        return d;
+    }
+}
+findMaxNumber();
+
+console.log(findMaxNumber(10, 2.3, 4, -1));
+
+// можно заменить простой функцией Math.max
+
+
+/// Задачка на числа Фибонначи
+
+function fib(x) {
+    if (typeof(x) != 'number' || x === 0) {
+        return '';
+    }
+
+    let fibbo = '';
+    let first = 0,
+        second = 1;
+
+    for (let i = 0; i < x; i++) {
+        if (i + 1 === x) {
+            fibbo +=`${first}`;
+        } else {
+            fibbo +=`${first} ` ;
+        }
+        let third = first + second;
+        first = second;
+        second = third;
+    }
+    return fibbo;
+}
+fib();
+console.log(fib(8));

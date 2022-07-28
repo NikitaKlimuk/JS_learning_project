@@ -442,4 +442,5 @@ function getMathResult(num, times) {
 
     return str;
 }
-getMathResult(10, 5);
+getMathResult();
+console.log(getMathResult(10, 15));
