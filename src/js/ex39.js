@@ -30,7 +30,7 @@ let answ = +prompt("Hello", "");
 
 // To boolean
 // 1)
-// 0, '', null, undefined, Nan -- всегда False, остальное вссегда True
+// 0, '', null, undefined, NaN -- всегда False, остальное вссегда True
 
 let switcher = null; // Тут условие не сработает
 if (switcher) {

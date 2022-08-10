@@ -18,3 +18,9 @@ const c2 = increment();
 const c3 = increment();
 
 console.log(c1, c2, c3);
+
+
+const names = NaN,
+      surname = 'Smith';
+console.log(typeof(names));
+console.log("a" > "b");
