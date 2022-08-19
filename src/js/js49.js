@@ -26,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     box.addEventListener('touchmove', (e) => {
         e.preventDefault();
 
-        console.log(e.targetTouches[0].pageX);
+        console.log(e.targetTouches[0].pageX); // Отслеживает координаты пальца на объекте
     });
 });
 
